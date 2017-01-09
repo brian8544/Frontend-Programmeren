@@ -153,6 +153,13 @@ border-radius: 50%;
 	top: 45%;
 	left: 4%;
 }
+#volgende{
+	z-index: 1;
+	margin-right: 10px;
+	position: fixed;
+	top: 45%;
+	right: 4%;
+}
 
 footer{
 	position: fixed;
