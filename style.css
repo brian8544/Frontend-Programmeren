@@ -182,3 +182,15 @@ footer p{
 	margin: 0;
 	color: firebrick;
 }
+
+#albums{
+	width: 25%;
+	padding-left: 5%;
+	float: left;
+}
+
+#albums ul li img{
+	width: 50%;
+	margin-top: 9%;
+	box-shadow: 4px 4px 4px 10px rgba(0,0,0,0.5);
+}
