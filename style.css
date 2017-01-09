@@ -174,6 +174,7 @@ footer{
 	padding-bottom: 10px;
 	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
+
 footer img{
 	margin: 0;
 	width: 4%;
@@ -199,7 +200,7 @@ footer p{
 	width: 55%;
 	border-radius: 2%;
 	padding-top: 2%;
-	box-shadow: 4px 4px 10px rgba(0,0,0,0.5)
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 	float: left;
 	background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55);
 }
