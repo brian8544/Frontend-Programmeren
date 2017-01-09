@@ -2,4 +2,4 @@
 
 Frontend Programmeren > brinkman-uitgeverij-mbopraktijk.nl
 
-- https://github.com/brian8544/Frontend-Programmeren/ -
+https://github.com/brian8544/Frontend-Programmeren/
