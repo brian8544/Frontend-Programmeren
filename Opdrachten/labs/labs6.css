@@ -1,0 +1,86 @@
+html{ 
+ height: 100%
+ width: 100%
+ background: #blue;
+ overflow: auto;
+}
+
+
+body{background-color: rgba(0,0,255,0.5);}
+
+#div1{ 	
+ box-shadow: 4px 4px 10px;
+ background-color: green;
+ width: auto;
+ height: 20px;
+ font-size: 16px;
+ margin: auto;
+ margin-bottom: 3%;
+ margin-top: 0%;
+ text-align: center;
+} 
+
+#div2{
+ box-shadow: 4px 4px 10px;
+ background-color: lightgreen ;
+ width: 90%;
+ height: 500px;
+ font-size: 30px;
+ margin-left: 5%;
+ margin-bottom: 3%;
+ text-align: center;
+ background-image: url(http://icons.iconarchive.com/icons/yootheme/social-bookmark/256/social-google-box-icon.png);
+ background-repeat:no-repeat;
+ background-size: 350px 350px;
+ background-position: top right;
+
+ -webkit-animation-name: revolutie;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  animation-name: revolutie;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+ 
+#div3{
+ box-shadow: 4px 4px 10px;
+ background-color: yellow;
+ width: 94%;
+ height: 300px ;
+ font-size: 35;
+ margin-left: 3%; 
+ background-image: url(http://icons.iconseeker.com/ico/mozilla/firefox-2.ico);
+ background-repeat:no-repeat;
+ background-size: 220px 220px;
+ background-position: bottom left;
+ opacity: .7
+}
+
+
+#div4{
+ box-shadow: 4px 4px 10px;
+ width: 94%;
+ height: 120px; 
+ font-size: 45;
+ margin-left: 3%;
+ background-color: green;
+ position: relative;
+ top: 50%;
+ transform: translateY(-50%);
+ opacity: .8
+}
+
+nav ul li #div2:hover,
+
+#div2:hover {
+	float: right
+}
+
+@keyframes revolutie {
+	from {transform: rotateX(0deg);}
+	to   {transform: rotateX(360deg);}
+}
+
