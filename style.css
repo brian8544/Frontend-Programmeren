@@ -231,3 +231,57 @@ tbody tr:hover{
 audio{
 	width: 100%;
 }
+
+form{
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+
+legend{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+fieldset{
+	border: solid 2px #009D22;
+	width: 70%;
+	margin: auto;
+	border-radius: 2%;
+	background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55);
+}
+
+input,select, textarea{
+	border: solid 1px rgb(0,0,0);
+	margin: 5px;
+	padding: 5px 30px 5px 50px;
+	width: 50%;
+	text-align: center;
+	font-size: 1em;
+	border-radius: 5px;
+}
+
+input: focus, textarea: focus{
+	box-shadow: 6px 6px 10px #2eef1e;
+}
+
+select{
+	width: 35%;
+}
+
+input[type=date]{
+	width: 25%;
+}
+input[type=checkbox],
+input[type=radio]{
+	width: 4%;
+}
+input[type=submit]{
+	background-color: #bada55
+	width: 43%;
+	opacity: 0.6;
+}
+input[type=submit]: hover{
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}

@@ -32,10 +32,10 @@
  			<main>
 				<div id="pager">
 						<div id="vorige">
-						<a href="#top"> &lt;</a>
+						<a href="index.html"> &lt;</a>
 					</div>
 					<div id="volgende">
-					<a href="playlist.html"> &gt; </a>
+					<a href="formulier.html"> &gt; </a>
 					</div>
 				<div id="albums">
 					<ul>
@@ -115,21 +115,115 @@
 						<audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
 						</audio>
 						</div> <!-- einde album-1 -->
-						<div id="album-2" style="display: block">
-
-						<!-- HIER MOET WAT KOMEN -->
-
+						<div id="album-2" style="display: none">
+							<div id="album-1" style='display: block'>
+								<video controls width="80%" preload poster="images/album-1.jpg">
+									<source src="videos/trailer.webm" type="video/webm"/>
+									<source src="videos/trailer.ogv" type="video/ogg"/>
+									<source src="videos/trailer.mp4" type="vido/mp4"/>
+								</video>
+								<table>
+									<thead>
+										<tr>
+											<th>Track</th><th>Titel</th><th>Tijd</th><th>Plays</th>
+										</tr>
+									</thead>
+									</tbody>
+										<tr>
+											<td>1</td>
+											<td>Titel 1</td>
+											<td>02:08</td>
+											<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+												</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Titel 2</td>
+												<td>03:18</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+											</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Titel 3</td>
+												<td>02:08</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio')
+										v.play()">|></a>
+											</td>
+											</tr>
+										</tbody>
+									</table>
+									<audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+									</audio>
 						</div> <!-- einde album-2 -->
-						<div id="album-3" style="display: block">
-
-						<!-- HIER MOET WAT KOMEN -->
-
+						<div id="album-3" style="display: none">
+							<div id="album-1" style='display: block'>
+								<video controls width="80%" preload poster="images/album-1.jpg">
+									<source src="videos/trailer.webm" type="video/webm"/>
+									<source src="videos/trailer.ogv" type="video/ogg"/>
+									<source src="videos/trailer.mp4" type="vido/mp4"/>
+								</video>
+								<table>
+									<thead>
+										<tr>
+											<th>Track</th><th>Titel</th><th>Tijd</th><th>Plays</th>
+										</tr>
+									</thead>
+									</tbody>
+										<tr>
+											<td>1</td>
+											<td>Titel 1</td>
+											<td>02:08</td>
+											<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+												</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Titel 2</td>
+												<td>03:18</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+											</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Titel 3</td>
+												<td>02:08</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio')
+										v.play()">|></a>
+											</td>
+											</tr>
+										</tbody>
+									</table>
+									<audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+									</audio>
 						</div> <!-- einde album-3 -->
 						</div> <!-- einde multimedia -->
 						</main>
 				<footer>
 				<a href="#top"><img src="images/twitter.png" alt="x" ></a>
-				<a href="#top"><img src="images/youtube.png" alt="x" ></a>
+				<a href="#top"><i	mg src="images/youtube.png" alt="x" ></a>
 				<a href="#top"><img src="images/facebook.png" alt="x" ></a>
 				<p>Copyright &copy; 2017 <i>Ontworpen door: xxx</i>
 				</footer>
