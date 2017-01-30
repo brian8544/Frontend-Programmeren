@@ -251,7 +251,7 @@ fieldset{
 	background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55);
 }
 
-input,select, textarea{
+input, select, textarea{
 	border: solid 1px rgb(0,0,0);
 	margin: 5px;
 	padding: 5px 30px 5px 50px;
