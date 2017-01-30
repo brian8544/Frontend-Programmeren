@@ -40,22 +40,22 @@
 				<div id="albums">
 					<ul>
 						<li>
-							<a onclick=
-							"document.getElementById('album-1').style.display='block';
+							<a onclick="
+					   		 document.getElementById('album-1').style.display='block';
 							document.getElementById('album-2').style.display='none';
 							document.getElementById('album-3').style.display='none';">
 							<img src="images/album-1.jpg"></a>
 						</li>
 						<li>
-							<a onclick=
-							"document.getElementById('album-1').style.display='none';
+							<a onclick="
+							document.getElementById('album-1').style.display='none';
 							document.getElementById('album-2').style.display='block';
 							document.getElementById('album-3').style.display='none';">
 							<img src="images/album-2.jpg"></a>
 						</li>
 						<li>
-							<a onclick=
-							"document.getElementById('album-1').style.display='none';
+							<a onclick="
+							document.getElementById('album-1').style.display='none';
 							document.getElementById('album-2').style.display='none';
 							document.getElementById('album-3').style.display='block';">
 							<img src="images/album-3.jpg"></a>
@@ -71,60 +71,63 @@
 						<source src="videos/trailer.mp4" type="vido/mp4"/>
 					</video>
 					<table>
-						<thread>
+						<thead>
 							<tr>
-								<th>Track</th><th>Titel</th><th>Tijd</th><th>Play</th>
+								<th>Track</th><th>Titel</th><th>Tijd</th><th>Plays</th>
 							</tr>
-						</thread>
-						<tbody>
+						</thead>
+						</tbody>
 							<tr>
 								<td>1</td>
 								<td>Titel 1</td>
 								<td>02:08</td>
 								<td>
-									<a onclick="
-									document.getElementById('audio').src='muziek/2121.mp3';
-									v=document.getElementById('audio');
-									v.play();>|></a>
-								</td>
+							<a onclick="
+							document.getElementById('audio').src='muziek/2121.mp3';
+							v=document.getElementById('audio');
+							v.play();">|></a>
+									</td>
+								</tr>
 								<tr>
 									<td>2</td>
 									<td>Titel 2</td>
 									<td>03:18</td>
 									<td>
-										<a onclick="
-										document.getElementById('audio').src='muziek/2121.mp3';
-										v=document.getElementById('audio');
-										v.play();>|></a>
-									</td>
+							<a onclick="
+							document.getElementById('audio').src='muziek/2121.mp3';
+							v=document.getElementById('audio');
+							v.play();">|></a>
+								</td>
 								</tr>
 								<tr>
+									<td>3</td>
+									<td>Titel 3</td>
+									<td>02:08</td>
 									<td>
-										<td>3</td>
-										<td>Titel 3</td>
-										<td>02:08</td>
-										<td>
-											<a onclick="
-											document.getElementById('audio').src='muziek/2121.mp3';
-											v=document.getElementById('audio');
-											v.play();">|></a>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
-								/audio>
-							</div> <!-- einde album-1 -->
-							<div id="album-2" style='display: none'>
+							<a onclick="
+							document.getElementById('audio').src='muziek/2121.mp3';
+							v=document.getElementById('audio')
+							v.play()">|></a>
+								</td>
+								</tr>
+							</tbody>
+						</table>
+						<audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+						</audio>
+						</div> <!-- einde album-1 -->
+						<div id="album-2" style="display: block">
 
-							</div> <!-- einde album-2 -->
-							<div id="album-3" style='display: none'>
+						<!-- HIER MOET WAT KOMEN -->
 
-							</div> <!-- einde album-3 -->
+						</div> <!-- einde album-2 -->
+						<div id="album-3" style="display: block">
+
+						<!-- HIER MOET WAT KOMEN -->
+
+						</div> <!-- einde album-3 -->
 						</div> <!-- einde multimedia -->
-			</main>
-
- 			<footer>
+						</main>
+				<footer>
 				<a href="#top"><img src="images/twitter.png" alt="x" ></a>
 				<a href="#top"><img src="images/youtube.png" alt="x" ></a>
 				<a href="#top"><img src="images/facebook.png" alt="x" ></a>

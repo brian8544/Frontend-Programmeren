@@ -31,15 +31,18 @@ h3{
 nav{
 	width: 100%;
 }
+
 nav ul{
 	text-align: center;
 	margin: 0 0 0 0;
+
 	padding-left: 0;
 }
 li{
 	list-style-type: none;
     float: left;
 }
+
 nav ul li{
 	width: 25%;
 	background: linear-gradient(#9FB3B5,#E3E9EA,#7C9799);
@@ -49,11 +52,13 @@ nav ul li{
 a {
 	text-decoration: none;
 }
+
 nav ul li a {
 	font-size: 1.7rem;
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 }
+
 nav ul li a:hover,
 nav ul li a:focus
 {
@@ -140,12 +145,14 @@ border-radius: 50%;
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
 #pager a:hover{
 	opacity: 0.7;
 	filter: alpha(opacity=40);
 	font-size: 3.2rem;
 	background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55)
 }
+
 #vorige{
 	z-index: 1;
 	margin-left: 10px;
@@ -153,6 +160,7 @@ border-radius: 50%;
 	top: 45%;
 	left: 4%;
 }
+
 #volgende{
 	z-index: 1;
 	margin-right: 10px;
@@ -170,8 +178,6 @@ footer{
 	float: left;
 	text-align: center;
 	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 10px;
 	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
@@ -179,6 +185,7 @@ footer img{
 	margin: 0;
 	width: 4%;
 }
+
 footer p{
 	margin: 0;
 	color: firebrick;
@@ -205,7 +212,7 @@ footer p{
 	background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55);
 }
 
-table{
+table {
 	width: 100%;
 }
 
