@@ -269,18 +269,21 @@ select{
 	width: 35%;
 }
 
-input[type=date]{
+input[type=date] {
 	width: 25%;
 }
+
 input[type=checkbox],
-input[type=radio]{
+input[type=radio] {
 	width: 4%;
 }
-input[type=submit]{
-	background-color: #bada55
+
+input[type=submit] {
+	background-color: #bada55;
 	width: 43%;
 	opacity: 0.6;
 }
+
 input[type=submit]: hover{
 	opacity: 1;
 	transition: opacity 0.5s linear;
