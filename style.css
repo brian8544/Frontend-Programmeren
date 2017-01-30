@@ -204,3 +204,23 @@ footer p{
 	float: left;
 	background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55);
 }
+
+table{
+	width: 100%;
+}
+
+table th{
+	text-transform: uppercase;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #868585;
+}
+
+tbody tr:hover{
+	opacity: 0.6; filter: alpha(opacity=6);
+}
+
+audio{
+	width: 100%;
+}

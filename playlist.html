@@ -70,8 +70,58 @@
 						<source src="videos/trailer.ogv" type="video/ogg"/>
 						<source src="videos/trailer.mp4" type="vido/mp4"/>
 					</video>
-			</div> <!-- einde album-1 -->
-		 	</div> <!-- einde multimedia -->
+					<table>
+						<thread>
+							<tr>
+								<th>Track</th><th>Titel</th><th>Tijd</th><th>Play</th>
+							</tr>
+						</thread>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Titel 1</td>
+								<td>02:08</td>
+								<td>
+									<a onclick="
+									document.getElementById('audio').src='muziek/2121.mp3';
+									v=document.getElementById('audio');
+									v.play();>|></a>
+								</td>
+								<tr>
+									<td>2</td>
+									<td>Titel 2</td>
+									<td>03:18</td>
+									<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();>|></a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<td>3</td>
+										<td>Titel 3</td>
+										<td>02:08</td>
+										<td>
+											<a onclick="
+											document.getElementById('audio').src='muziek/2121.mp3';
+											v=document.getElementById('audio');
+											v.play();">|></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+								/audio>
+							</div> <!-- einde album-1 -->
+							<div id="album-2" style='display: none'>
+
+							</div> <!-- einde album-2 -->
+							<div id="album-3" style='display: none'>
+
+							</div> <!-- einde album-3 -->
+						</div> <!-- einde multimedia -->
 			</main>
 
  			<footer>
