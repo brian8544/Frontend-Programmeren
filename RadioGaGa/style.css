@@ -1,0 +1,310 @@
+/* Stijlen voor RadioGaGa */
+html{
+	height: 100%;
+	width: 100%;
+	background: #lightgray;
+	overflow: auto;
+}
+
+body{
+	width: 96%;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	border: 1px solid;
+	overflow: inherit;
+	background-color: #fff;
+	text-align: center;
+	font-family: Verdana, Arial, sans-serif;
+	color: #000;
+	font-size: 16px;
+	font-style: normal;
+}
+
+
+h3{
+	margin: 0;
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+nav{
+	width: 100%;
+}
+
+nav ul{
+	text-align: center;
+	margin: 0 0 0 0;
+
+	padding-left: 0;
+}
+li{
+	list-style-type: none;
+    float: left;
+}
+
+nav ul li{
+	width: 25%;
+	background: linear-gradient(#9FB3B5,#E3E9EA,#7C9799);
+}
+
+
+a {
+	text-decoration: none;
+}
+
+nav ul li a {
+	font-size: 1.7rem;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+nav ul li a:hover,
+nav ul li a:focus
+{
+	color: firebrick;
+}
+
+a:hover {
+	background-color: yellow;
+	letter-spacing: 5px;
+}
+
+#logo{
+	margin-top: 15px;
+	padding-top: 10%:
+	background-image: url(images/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+main{
+	width: 100%;
+	margin: 0;
+	padding-bottom: 3%;
+}
+
+#disc {
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.8;
+	width: 400px;
+	height: 400px;
+	margin-top: 10%;
+
+	background-image: -moz-radial-gradient(
+	45px 45px 45deg, circle cover, grey 0%, black 100%, black 95%);
+
+	background-image: -webkit-radial-gradient(
+	45px 45px, circle cover, grey, black);
+
+	background-image: radial-gradient(
+	45px 45px 45deg, circle cover, grey 0%, black 100%, black 95%);
+
+	-webkit-animation-name: revolutie;
+	-webkit-animation-duration: 3s;
+	-webkit-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+
+	animation-name: revolutie;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+/* Safari, Opera */
+@-webkit-keyframes revolutie {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+	}
+
+/* standard */
+@keyframes revolutie {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+#center {
+width: 105px;
+height: 105px;
+background: orange;
+position: relative;
+top: 37%;
+left: 37%;
+display: block;
+border: 0.5px solid #fff;
+border-radius: 50%;
+}
+
+#pager a{
+	font-size: 3rem;
+	font-weight: bolder;
+	text-decoration: none;
+	border-radius: 50%;
+		box-shadow: 4px 4px 15px rgba(0,0,0,0.8);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#pager a:hover{
+	opacity: 0.7;
+	filter: alpha(opacity=40);
+	font-size: 3.2rem;
+	background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55)
+}
+
+#vorige{
+	z-index: 1;
+	margin-left: 10px;
+	position: fixed;
+	top: 45%;
+	left: 4%;
+}
+
+#volgende{
+	z-index: 1;
+	margin-right: 10px;
+	position: fixed;
+	top: 45%;
+	right: 4%;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: 0;
+	float: left;
+	text-align: center;
+	width: 100%;
+	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+footer img{
+	margin: 0;
+	width: 4%;
+}
+
+footer p{
+	margin: 0;
+	color: firebrick;
+}
+
+#albums{
+	width: 25%;
+	padding-left: 5%;
+	float: left;
+}
+
+#albums ul li img{
+	width: 50%;
+	margin-top: 9%;
+	box-shadow: 4px 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+#multimedia{
+	width: 55%;
+	border-radius: 2%;
+	padding-top: 2%;
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+	float: left;
+	background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55);
+}
+
+table {
+	width: 100%;
+}
+
+table th{
+	text-transform: uppercase;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #868585;
+}
+
+tbody tr:hover{
+	opacity: 0.6; filter: alpha(opacity=6);
+}
+
+audio{
+	width: 100%;
+}
+
+form{
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+
+legend{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+fieldset{
+	border: solid 2px #009D22;
+	width: 70%;
+	margin: auto;
+	border-radius: 2%;
+	background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55);
+}
+
+input, select, textarea{
+	border: solid 1px rgb(0,0,0);
+	margin: 5px;
+	padding: 5px 30px 5px 50px;
+	width: 50%;
+	text-align: center;
+	font-size: 1em;
+	border-radius: 5px;
+}
+
+input: focus, textarea: focus{
+	box-shadow: 6px 6px 10px #2eef1e;
+}
+
+select{
+	width: 35%;
+}
+
+input[type=date] {
+	width: 25%;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	width: 4%;
+}
+
+input[type=submit] {
+	background-color: #bada55;
+	width: 43%;
+	opacity: 0.6;
+}
+
+input[type=submit]: hover{
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+
+#contact{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: justify;
+	line-height: 1.6em;
+}
+
+#contact span{
+	font-sizee: 1.3rem;
+	letter-spacing: 5px;
+	text-shadow: 2px 2px 4px #2eef1e;
+	text-inform: uppercase;
+}
+
+}input[type=submit]: hover{
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}

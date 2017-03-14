@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta http-equiv="Content-Type"
+		content="text/html;
+		charset=UTF-8">
+		<title>RadioX</title>
+		<style>
+		#papier{
+			height: 300px;
+			background-color: #EEEEEE;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#veld{
+			z-index: 1;
+			width: 300px;
+			height: 250px;
+			border: 1px #000 solid;
+		}
+		.centreren{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#bal{
+		z-index: 2;
+		margin-left: auto;
+		margin-right: auto;}
+		background-color: #03A9F4;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		border: 0px solid #ccc;
+		box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	}
+
+	@-webkit-keyframes play{
+		from, to{
+		top: 0;
+	-webkit-animation-timing-function: ease-in;
+	}
+	50% {
+		top: 200px;
+		-webkit-animation-timing-function: ease-in;
+		}
+	}
+	@keyframes play {
+	from, to {
+		top: 0;
+		animation-timing-function: ease-in;
+	}
+	50% {
+		top: 200px;
+		animation-timing-function: ease-in;
+		}
+	}
+
+		</style>
+	</head>
+	<body>
+		<section id="papier">
+			<div id="object"></div>
+		</section>
+	</body>
+</html>

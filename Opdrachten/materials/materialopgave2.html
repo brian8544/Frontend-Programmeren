@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta http-equiv="Content-Type"
+		content="text/html;
+		charset=UTF-8">
+		<title>RadioX</title>
+		<style>
+		#papier{
+			height: 300px;
+			background-color: #EEEEEE;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#object{
+			z-index: 2;
+			background-color: #03A9F4;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			border: 2px solid #ccc;
+			box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+			-moz-transition-duration: 6.0s;
+			-moz-transition-timing-function: ease-in-out;
+			
+			transition: border-adius, height, width linear;
+			transition-duration: 6.0s;
+			transition-timing-function: ease-in-out;
+		}
+		
+		#object:hover{
+		box-shadow: 3px 8px rgba(0,0,0,0.5);
+		height: 200px;
+		width: 300px;
+		border-radius: 5px;
+		transform: translate(0, 0);
+		}
+		</style>
+	</head>
+	<body>
+		<section id="papier">
+			<div id="object"></div>
+		</section>
+	</body>
+</html>

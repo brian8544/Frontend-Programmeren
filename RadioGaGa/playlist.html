@@ -1,0 +1,231 @@
+<!-- website RadioGaGa -->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+		<meta http-equiv="Content-Type"
+		content="text/html";
+		charset=UTF-8">
+		<link rel="stylesheet" href="style.css">
+
+<meta name="robots" content="all">
+<meta name="language" content="Dutch">
+<meta name="author" content="Brian Oost">
+<meta name="description"
+	content="RadioGaGa marketing">
+<meta name="keywords"
+	content="RadioGaGa, muziek, playlist">
+<title>RadioGaGa</title>
+	<title>RadioGaGa</title>
+</head>
+	<body>
+ 			<nav>
+ 				<ul>
+ 					<li><a href="index.html">Home</a></li>
+ 					<li><a href="playlist.html">Playlist</a></li>
+ 					<li><a href="formulier.html">Formulier</a></li>
+ 					<li><a href="contact.html">Contact</a></li>
+				</ul>
+ 			</nav>
+ 			<div id="logo">
+ 				<img width="200px" src="images/logo.png" alt="x">
+ 			</div>
+ 			<main>
+				<div id="pager">
+						<div id="vorige">
+						<a href="index.html"> &lt;</a>
+					</div>
+					<div id="volgende">
+					<a href="formulier.html"> &gt; </a>
+					</div>
+				<div id="albums">
+					<ul>
+						<li>
+							<a onclick="
+					   		 document.getElementById('album-1').style.display='block';
+							document.getElementById('album-2').style.display='none';
+							document.getElementById('album-3').style.display='none';">
+							<img src="images/album-1.jpg"></a>
+						</li>
+						<li>
+							<a onclick="
+							document.getElementById('album-1').style.display='none';
+							document.getElementById('album-2').style.display='block';
+							document.getElementById('album-3').style.display='none';">
+							<img src="images/album-2.jpg"></a>
+						</li>
+						<li>
+							<a onclick="
+							document.getElementById('album-1').style.display='none';
+							document.getElementById('album-2').style.display='none';
+							document.getElementById('album-3').style.display='block';">
+							<img src="images/album-3.jpg"></a>
+						</li>
+					</ul>
+				</div> <!-- einde albums -->
+
+				<div id="multimedia">
+				<div id="album-1" style='display: block'>
+					<video controls width="80%" preload poster="images/album-1.jpg">
+						<source src="videos/trailer.webm" type="video/webm"/>
+						<source src="videos/trailer.ogv" type="video/ogg"/>
+						<source src="videos/trailer.mp4" type="vido/mp4"/>
+					</video>
+					<table>
+						<thead>
+							<tr>
+								<th>Track</th><th>Titel</th><th>Tijd</th><th>Plays</th>
+							</tr>
+						</thead>
+						</tbody>
+							<tr>
+								<td>1</td>
+								<td>Titel 1</td>
+								<td>02:08</td>
+								<td>
+							<a onclick="
+							document.getElementById('audio').src='muziek/2121.mp3';
+							v=document.getElementById('audio');
+							v.play();">|></a>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Titel 2</td>
+									<td>03:18</td>
+									<td>
+							<a onclick="
+							document.getElementById('audio').src='muziek/2121.mp3';
+							v=document.getElementById('audio');
+							v.play();">|></a>
+								</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Titel 3</td>
+									<td>02:08</td>
+									<td>
+							<a onclick="
+							document.getElementById('audio').src='muziek/2121.mp3';
+							v=document.getElementById('audio')
+							v.play()">|></a>
+								</td>
+								</tr>
+							</tbody>
+						</table>
+						<audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+						</audio>
+						</div> <!-- einde album-1 -->
+						<div id="album-2" style="display: none">
+							<div id="album-1" style='display: block'>
+								<video controls width="80%" preload poster="images/album-1.jpg">
+									<source src="videos/trailer.webm" type="video/webm"/>
+									<source src="videos/trailer.ogv" type="video/ogg"/>
+									<source src="videos/trailer.mp4" type="vido/mp4"/>
+								</video>
+								<table>
+									<thead>
+										<tr>
+											<th>Track</th><th>Titel</th><th>Tijd</th><th>Plays</th>
+										</tr>
+									</thead>
+									</tbody>
+										<tr>
+											<td>1</td>
+											<td>Titel 1</td>
+											<td>02:08</td>
+											<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+												</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Titel 2</td>
+												<td>03:18</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+											</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Titel 3</td>
+												<td>02:08</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio')
+										v.play()">|></a>
+											</td>
+											</tr>
+										</tbody>
+									</table>
+									<audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+									</audio>
+						</div> <!-- einde album-2 -->
+						<div id="album-3" style="display: none">
+							<div id="album-1" style='display: block'>
+								<video controls width="80%" preload poster="images/album-1.jpg">
+									<source src="videos/trailer.webm" type="video/webm"/>
+									<source src="videos/trailer.ogv" type="video/ogg"/>
+									<source src="videos/trailer.mp4" type="vido/mp4"/>
+								</video>
+								<table>
+									<thead>
+										<tr>
+											<th>Track</th><th>Titel</th><th>Tijd</th><th>Plays</th>
+										</tr>
+									</thead>
+									</tbody>
+										<tr>
+											<td>1</td>
+											<td>Titel 1</td>
+											<td>02:08</td>
+											<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+												</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Titel 2</td>
+												<td>03:18</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+											</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Titel 3</td>
+												<td>02:08</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='muziek/2121.mp3';
+										v=document.getElementById('audio')
+										v.play()">|></a>
+											</td>
+											</tr>
+										</tbody>
+									</table>
+									<audio style="display: block" id="audio" src="muziek/2121.mp3" controls>
+									</audio>
+						</div> <!-- einde album-3 -->
+						</div> <!-- einde multimedia -->
+						</main>
+				<footer>
+				<a href="#top"><img src="images/twitter.png" alt="x" ></a>
+				<a href="#top"><i	mg src="images/youtube.png" alt="x" ></a>
+				<a href="#top"><img src="images/facebook.png" alt="x" ></a>
+				<p>Copyright &copy; 2017 <i>Ontworpen door: xxx</i>
+				</footer>
+ 	</body>
+ </html>
