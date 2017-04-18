@@ -17,6 +17,50 @@
       <li>Card 3</li>
     </ul>
   </nav>
+  <div class="tabs">
+    <div class="tab" id="tab1" onclick=
+    "document.getElementById('card1').style.display='block';
+    document.getElementById('card2').style.dispay='none';
+    document.getElementById('card3').style.display='none';">
+    Tab1
+  </div>
+  <div class="tab" id="tab2" onclick=
+  "document.getElementById('card1').style.display='none';
+  document.getElementById('card2').style.dispay='block';
+  document.getElementById('card3').style.display='none';">
+  Tab2
 </div>
+<div class="tabs" id="tab3" onclick=
+"document.getElementById('card1').style.display='none';
+document.getElementById('card2').style.dispay='none';
+document.getElementById('card3').style.display='block';">
+Tab3
+</div>
+
+<div class="cards" id="card1" style="display: none;">
+  <div class="content-left">
+    Card 1
+    <div class="x-icon" onclick=
+    "document.getElementById('card1').style.display='none';">
+    x</div>
+  </div>
+  <div class="content-right"> Content 1 </div>
+</div>
+<div class="cards" id="cards2" style="display: none;">
+  <div class="content-left">
+    Card 2
+    <div class="x-icon" onclick=
+    "document.getElementById('card2').style.display='none';">
+    x</div>
+  </div>
+  <div class="cards" id="cards3" style="display: none;">
+    <div class="content-left">
+      Card 3
+      <div class="x-icon" onclick=
+      "document.getElementById('card3').style.display='none';">
+      x</div>
+    </div>
+    <div class="content-right"> Content 3 </div>
+</div>    
 </body>
 </html>

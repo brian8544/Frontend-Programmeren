@@ -134,3 +134,130 @@ li {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+div{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+li{
+  background: #70c26f;
+  list-style-type: none;
+}
+li: hover{
+  background: #0afa76;
+  opacity: 0.4; filter: alpha(opacity=4);
+}
+
+/* tabs */
+.tabs{
+  position: absolute;
+  top: 150px;
+  right: 0;
+  left: 0;
+  text-align: center
+}
+.tab{
+  display: inline-block;
+  position: relative;
+  border-radius: 4px;
+  margin: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 20%;
+  height: 50px;
+  line-height: 48px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.tab:hover{
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#tab1{
+  background-color: #F4DB33;
+}
+#tab2{
+  background-color: #972FF8;
+}
+#tab3{
+  background-color: #DC3C84;
+}
+
+/* cards */
+.cards{
+  position: relative;
+  top: 150px;
+  left: 60px;
+  height: 300px;
+  width: 80%;
+  border-radius: 4px;
+  text-align: start;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.content-left{
+  float: left;
+  width: 22%;
+  height: 300px;
+  padding: 15px;
+  text-align: center;
+}
+.content-right{
+  padding-top: 15px;
+  padding-left: 15px;
+  float: right;
+  width: 60%;
+  height: 300px;
+}
+.x-icon{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  font-size: 2.5em;
+  background-color: #70c26f;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.x-icon:hover{
+  box-shadow: 0px 5px 10px rgba(255, 0, 0, 0.5);
+}
+#card1.content-left{
+  background-color: #F4DB33;
+}
+#card2.content-left{
+  background-color: #972FF8;
+}#card3.content-left{
+  background-color: #DC3C84;
+}
+
+@keframes zoomIn{
+  0%{
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50%{
+    opacity: 0.5;
+  }
+}
+.cards{
+  -webkit-animation-name: zoomIn;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+
+  -moz-animation-name: zoomIn;
+  -moz-animation-duration: 0.6s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+
+  animation-name: zoomIn;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  }
