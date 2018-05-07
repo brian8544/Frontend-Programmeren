@@ -23,7 +23,19 @@ mijngetal = prompt('Typ een getal in');
 resultaat = verdubbel(mijngetal);
 document.write('<br />Input-getal:' + mijngetal);
 document.write(' <br />Output-getal:' + resultaat);
+
+function dollar_naar_euro(dollars) { 
+return(dollars * euroKoers());
+}
+document.write{
+'<br>100 dollar is ' + dollar_naar_euro(100) + 'euro\'s');
+
 </script>
 
+<form name='form'>
+<input type="text" name="bedrag" placeholder="bedrag" />
+<input type="button" value="converteren"
+	onclick"document.write('conversie in euros:' + dollar_naar_euro(dcoument.form.bedrag.value)) "/>
+</form>
 </body>
 </html>

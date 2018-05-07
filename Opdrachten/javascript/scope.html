@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta http-equiv="Content-Type"
+		content="text/html;
+		charset=UTF-8">
+</head>
+<body>
+		<script>
+	// Globale Scope
+	scope = 'globaal';
+	bevolking = 1000;
+	document.write('<br>scope:'+scope + '<br>bevolking:'+ bevolking);
+	
+	function functionScope(){
+	// Lokale Scope
+	var scope = 'lokaal';
+	var lokaleBevolking = 10;
+	bevolking += lokaleBevolking;
+	forensen = 2;
+	document.write('<br>scope + '<br>bevolking:'+ lokaleBevolking);
+	}
+	functionScope();
+	document.write('<br>scope:'+scope + '<br>bevolking:'+ bevolking);
+	document.write('<br>Als eerste benoemd in functie forensen:'+forensen);
+
+	function bestelAuto(merk,klasse,kleur){
+	if(typeof arguments[0] === 'undefined'){
+	// gebruik default waarde
+		merk = 'Audi';
+	}
+	document.write(
+	'Besteled: een ' + merk + ' ' + klasse + ' in ' + kleur);
+	}
+	</script>
+
+
+
+</body>
+
+</html>
