@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Eindopdracht periode 4</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="data/js/teller.js"></script>
+	<script src="data/js/omkeren.js"></script>
+	<script src="data/js/omzetter.js"></script>
+	<link rel="stylesheet" href="data/css/style.css"> <!-- CSS om alles in het midden te krijgen -->
+</head>
+<body>
+	<div class="container">
+		<form name=formulier>
+			<div class="form-group">
+				<label>Input:</label>
+				<textarea class="form-control" rows="5" onkeyup="count_up(this);" id="textbox"></textarea>
+				<div id="toggle" style="display:none"><span class="text-muted pull-right" id="teller">0</span></div>
+			</br>
+				<center>
+				<!--- Begin button dat letters in letterbox telt --->
+				<input type="button" id="button" value="Tellen" name="answer" class="btn btn-primary" onclick="tellen();"/>
+				<!--- Einde button dat letters in letterbox telt --->
+
+				<!-- Begin button dat letters omdraait in letterbox -->
+				<input type="button" id="button" value="Omkeren" class="btn btn-primary" onClick="omkeren();"/>
+				<!-- Einde button dat letters omdraait in letterbox -->
+
+				<!-- Begin button dat letters omzet in hoofdletters/kleine letters -->
+				<input type="button" id="button" value="Omzetten hoofd/kleine" class="btn btn-primary" onclick="omzetter();">
+				<!-- Einde button dat letters omzet in hoofdletters/kleine letters -->
+				</center>
+
+			</div>
+			<br>
+			<div class="form-group">
+				<label>Output:</label>
+				<textarea disabled class="form-control" rows="5" id="geschiedenis"></textarea>
+			</div>
+		</form>
+		<center>
+		<p>Vergeet niet om popup boxen <b>aan</b> te zetten in je browser om dit volledig te laten werken.</br></br>
+		Brian Oost, 4IT16 - Einde opdracht periode 2</br>
+		&#9658;<a href="https://github.com/brian8544/Eindpresentatie-periode4"> GitHub</a>
+		</center>
+	</div>
+</body>
+</html>
