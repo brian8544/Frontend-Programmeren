@@ -1,0 +1,28 @@
+/* Stijlen voor RadioGaGa */
+html{
+	height: 100%;
+	width: 100%;
+	background: #lightgray;
+	overflow: auto;
+}
+
+body{ 
+	width: 96%;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	border: 1px solid;
+	overflow: inherit;
+	background-color: #fff;
+	text-align: center;
+	font-family: Verdana, Arial, sans-serif;
+	color: #000;
+	font-size: 16px;
+	font-style: normal;
+}
+
+h3{
+	margin: 0;
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
