@@ -12,9 +12,9 @@
  	{
  		var valutas = new Array();
 		valutas['eurodollar'] = 1.36;
-		valutas['dollareuro'] = 0.74;
-		valutas['euroruble'] = 2.50;
-		valutas['rubleeuro'] = 0.54;
+		valutas['dollar'] = 0.74;
+		valutas['euro'] = 2.50;
+		valutas['ruble'] = 0.54;
 
 		resultaat = bedrag * valutas[conversie];
  		return(resultaat);
@@ -29,7 +29,7 @@
 			<option value="dollareuro">dollar/euro</option>
 			<option value="eurodollar">euro/dollar</option>
 			<option value="rubleeuro">ruble/euro</option>
-			<option value="euroruble">euro/ruble</option>
+			<option value="ruble">euro/ruble</option>
 		</select>
  		<input type= "button" value="converteren"
  		onclick="document.write('conversie in euros:' +
