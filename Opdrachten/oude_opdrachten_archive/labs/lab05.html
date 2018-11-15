@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type"
+            content="text/html;
+            charset=UTF-8">
+
+   <title>Lab 05 - Einddatum</title>
+   
+</head>
+<body>
+   <script type="text/javascript">
+       var einddatum = prompt('Wat is het einddatum in: JJ-MM-DD? / Jaar-Maand-Datum');
+       var deadline = new Date(einddatum);
+<<<<<<< HEAD
+
+       document.write('<br/>'+deadline );
+        var nu = Date.now();     // Start vanaf moment van input
+        var dag = 8640000;      // 24 uur => totaal seconden
+        var dagen = ((deadline - nu) / dag);
+        document.write("<br />Nog : " + dagen.toFixed(1) + ' te gaan...'); // Print tekst met dagen nog tot deadline
+
+=======
+       document.write('<br/>Deadline:'+deadline );
+        var nu = Date.now();
+        var eenDag = 86400000;
+        var dagen = ((deadline - nu) / eenDag);
+        document.write("<br />Nog : " + dagen.toFixed(1) + ' te gaan...');
+>>>>>>> parent of 4ff6e6b... Git Stash
+   	</script>
+</body>
+</html>

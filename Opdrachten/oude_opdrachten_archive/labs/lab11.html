@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type"
+            content="text/html;
+            charset=UTF-8">
+
+   <title>Lab 11 - Telefoonnummer in alfabet</title>
+
+</head>
+<body>
+	<script type="text/javascript">
+        var getal = new Array();
+        getal[0] = "nul";
+        getal[1] = "een";
+        getal[2] = "twee";
+        getal[3] = "drie";
+        getal[4] = "vier";
+        getal[5] = "vijf";
+        getal[6] = "zes";
+        getal[7] = "zeven";
+        getal[8] = "acht";
+        getal[9] = "negen";
+    //  getal[10] = "tien"
+    //  ...
+        telefoonnr = '';
+        telefoon = prompt('Wat is uw telefoonnummer?');
+        lengte = telefoon.length;
+        for(x=0; x<lengte; x++)
+        {
+            teken = telefoon.charAt(x);
+            document.write(teken);
+            telefoonnummer = telefoonnr + getal[teken] + ' ';
+        }
+
+        document.write("<br />Uw telefoonnummer in alfabet is: " + telefoonr);
+
+	</script>
+</body>
+</html>

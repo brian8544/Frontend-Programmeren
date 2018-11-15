@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type"
+            content="text/html;
+            charset=UTF-8">
+
+   <title>Lab 06 - Factuur</title>
+
+</head>
+<body>
+   <script type="text/javascript">
+       var vandaag = new Date();
+       mm = vandaag.getMonth()+1;
+       dd = vandaag.getDate();
+       jjjj = vandaag.getFullYear();
+       document.write("Factuurdatum:" + dd + '-' + mm + '-' + jjjj + "<br />");
+       var dag = 86400000;
+       betaaldatum = vandaag.getTime() + (dag * 5);
+       betaaldatum = new Date(betaaldatum);
+       mm = betaaldatum.getMonth()+1;
+       dd = betaaldatum.getDate();
+       jjjj = betaaldatum.getFullYear();
+       document.write("Betaaldatum:" + dd + '-' + mm + '-' + jjjj + "<br />");
+       var klantnaam = prompt("Wat is je naam:");
+       var aantal = parseInt(prompt("Hoeveel boeken wilt u bestellen:"));
+       var titel = "JavaScript";
+       var prijs = 29.90;
+       bedrag = aantal * prijs;
+       btw = 0.06 * bedrag;
+       totaal = bedrag + btw;
+       document.write("Bedankt voor je bestelling: " + klantnaam + "<br />");
+       document.write("Boektitel: " + titel + "<br />");
+       document.write("Aantal te bestellen: " + aantal + "<br />");
+       document.write("Prijs per boek: &euro;" + prijs.toFixed(2) + "<br />");
+       document.write("Bedrag: &euro;" + bedrag.toFixed(2) + "<br />");
+       document.write("BTW: &euro;" + btw.toFixed(2) + "<br />");
+       document.write("Totaal inclusief BTW: &euro;" + totaal.toFixed(2) + "<br />");
+   </script>
+</body>
+</html>

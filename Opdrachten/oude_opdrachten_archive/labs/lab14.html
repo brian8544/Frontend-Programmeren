@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type"
+            content="text/html;
+            charset=UTF-8">
+
+   <title>Lab 14 - Letter generator</title>
+
+</head>
+<body>
+<script>
+alfa = ['a','b','c', 'd','e','f', 'g','h','i', 'j','k','l', 'm','n','o', 'p','q','r', 's','t','u', 'v', 'w', 'x', 'y', 'z',];
+
+function RandomLetters(){
+   for(x=0;x < 5;x++) {
+      i = Math.floor((Math.random()*27));
+      document.write( alfa[i]);
+   }
+}
+RandomLeters();
+</script>
+</body>
+</html>
