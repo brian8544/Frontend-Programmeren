@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type"
+            content="text/html;
+            charset=UTF-8">
+
+   <title>Lab 03 - </title>
+
+</head>
+<body>
+   <script type="text/javascript">
+ 		var testarray = new Array('een','twee',3,'vier');
+ 		testarray.push(5);
+ 		document.write("<br />Stap 3. " + testarray);
+ 		document.write("<br />Stap 4. Datatype is: " + typeof testarray[4]);
+ 		testarray.pop();
+ 		document.write("<br />Stap 6. " + testarray);
+ 		testarray.unshift('nul');
+ 		document.write("<br />Stap 8. " + testarray);
+ 		delete testarray[0];
+ 		document.write("<br />Stap 10. Datatype[0] is: " + typeof testarray[0]);
+ 		testarray.shift();
+ 		document.write("<br />Stap 12. " + testarray);
+ 		testarray.splice(1,1);
+ 		document.write("<br />Stap 14. " + testarray);
+ 		if(2 in testarray) testarray.splice(2,1);
+ 		document.write("<br />Stap 16. " + testarray);
+   </script>
+</body>
+</html>

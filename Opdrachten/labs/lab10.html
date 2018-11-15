@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type"
+            content="text/html;
+            charset=UTF-8">
+
+   <title>Lab 10 - Conversie van bedragen</title>
+   <script type="text/javascript">
+
+ 	function exchange(bedrag, conversie)
+ 	{
+ 		var valutas = new Array();
+		valutas['eurodollar'] = 1.36;
+		valutas['dollareuro'] = 0.74;
+		valutas['euroruble'] = 2.50;
+		valutas['rubleeuro'] = 0.54;
+
+		resultaat = bedrag * valutas[conversie];
+ 		return(resultaat);
+ 	}
+ 	</script>
+  </head>
+   <body>
+
+ 	<form name='form'>
+ 		<input type="text" name="bedrag" placeholder="vul bedrag in" />
+ 		<select name="conversie">
+			<option value="dollareuro">dollar/euro</option>
+			<option value="eurodollar">euro/dollar</option>
+			<option value="rubleeuro">ruble/euro</option>
+			<option value="euroruble">euro/ruble</option>
+		</select>
+ 		<input type= "button" value="converteren"
+ 		onclick="document.write('conversie in euros:' +
+        exchange(document.form.bedrag.value,document.form.conversie.value))"/>
+ 	</form>
+
+ </body>
+ </html>

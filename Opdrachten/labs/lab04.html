@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type"
+            content="text/html;
+            charset=UTF-8">
+
+   <title>Lab 04 - Pallets</title>
+   
+</head>
+<body>
+  <script>
+        var pallet = new Array('wit','blauw','groen','rood','zwart');
+        document.write('<br />pallet is nu: ' + pallet);
+        var nieuwekleur = prompt('Typ een nieuwe kleur in');
+        pallet.push(nieuwekleur);
+        document.write('<br />pallet is nu: ' + pallet);
+        var nieuwekleur = prompt( 'Typ een nieuwe kleur in:');
+        pallet.unshift(nieuwekleur);
+        document.write('<br />pallet is nu: ' + pallet);
+        pallet.sort();
+        document.write('<br />pallet is nu: ' + pallet);
+        pallet2 = pallet.splice(0,4);
+        document.write('<br />pallet is nu: ' + pallet);
+        document.write('<br />pallet twee is nu: ' + pallet2);
+        pallet3 = pallet.slice();
+        document.write('<br />pallet drie is nu: ' + pallet3);
+  </script>
+ </body>
+</html>

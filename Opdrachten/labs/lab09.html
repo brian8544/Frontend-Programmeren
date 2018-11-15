@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type"
+            content="text/html;
+            charset=UTF-8">
+
+   <title>Lab 09 - Rollen</title>
+
+</head>
+  <body>
+     <script type="text/javascript">
+
+         var rol = prompt("Wat is je rol?");
+         var inlogcode = prompt("Wat is je inlogcode?");
+
+         switch(rol)
+        {
+            case "admin":
+                if(inlogcode == "admin")
+                {
+                  alert("Welkom admin");
+                }
+                else
+                {
+                  alert("ongeldig inlogcode");
+                }
+                break;
+            case "docent":
+                if(inlogcode == "docent")
+                {
+                  alert("Welkom docent");
+                }
+                else
+                {
+                  alert("ongeldig inlogcode");
+                }
+                break;
+            case "student":
+                if(inlogcode == "student")
+                {
+                  alert("Welkom student");
+                }
+                else
+                {
+                  alert("ongeldig inlogcode");
+                }
+                break;
+           default:alert("ongeldig rol");
+
+        }
+    </script>
+  </body>
+</html>

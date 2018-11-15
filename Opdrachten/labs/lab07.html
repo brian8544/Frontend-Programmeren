@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type"
+            content="text/html;
+            charset=UTF-8">
+
+   <title>Lab 07 - Factuur / Bestelling</title>
+
+</head>
+<body>
+   <script type="text/javascript">
+       var vandaag = new Date();
+       mm = vandaag.getMonth()+1;
+       dd = vandaag.getDate();
+       jjjj = vandaag.getFullYear();
+       document.write("Factuurdatum:" + dd + '-' + mm + '-' + jjjj + "<br />");
+       var dag = 86400000
+       betaaldatum = vandaag.getTime() + (dag * 5);
+       betaaldatum = new Date(betaaldatum);
+       mm = betaaldatum.getMonth()+1;
+       dd = betaaldatum.getDate();
+       jjjj = betaaldatum.getFullYear();
+       document.write("Betaaldatum:" + dd + '-' + mm + '-' + jjjj + "<br />");
+       var klantnaam = prompt("Eigen naam:");
+       var aantal = parseInt(prompt("Aantal boeken te bestellen:"));
+       var woonplaats = prompt('Waar woon je:');
+       var postcode = prompt('Wat is je postcode:');
+
+       var bezorgkosten = 15;
+       if(woonplaats.toLowerCase() == 'amsterdam' && postcode.toUpperCase() >= '1000AA' && postcode.toUpperCase() <= '2000BB' )
+       {
+          bezorgkosten = 0;
+          alert('U betaalt geen bezorgkosten.');
+       }
+       var titel = "JavaScripts";
+       var prijs = 29.90;
+       bedrag = aantal * prijs;
+       btw = 0.06 * bedrag;
+       totaal = bedrag * btw * bezorgkosten;
+
+       document.write("Bedankt voor je bestelling: " + klantnaam);
+       document.write("<br />Woonplaats: " + woonplaats);
+       document.write("<br />Postcode: " + postcode);
+       document.write("<br />Boektitel: " + titel);
+       document.write("<br />Aantal te bestellen: " + aantal);
+       document.write("<br />Prijs per boek: " + prijs.toFixed(2));
+        document.write("<br />Bedrag: " + bedrag.toFixed(2));
+        document.write("<br />BTW: " + btw.toFixed(2));
+        document.write("<br />Bezorgkosten: " + bezorgkosten);
+        document.write("<br />Totaal bedrag inclusief BTW en bezorgingskosten: " + totaal.toFixed(2)); // Print verkeerd iets uit ...
+   </script>
+</body>
+</html>
